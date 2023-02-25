@@ -1,0 +1,188 @@
+.backBTN {
+  position: fixed;
+  z-index: 99999;
+  top: 10px;
+  left: 10px;
+}
+
+.cloud1Loading {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: -10%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 2s ease-in-out;
+}
+.cloud1Loading.active {
+  left: 100%;
+}
+
+.cloud2Loading {
+  position: fixed;
+  z-index: 9999;
+  top: -300px;
+  left: -30%;
+  width: 80%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 1.2s ease-in-out;
+}
+.cloud2Loading.active {
+  left: 100%;
+}
+
+.cloud3Loading {
+  position: fixed;
+  z-index: 9999;
+  top: -500px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 1.5s ease-in-out;
+}
+.cloud3Loading.active {
+  left: 100%;
+}
+
+.cloud4Loading {
+  position: fixed;
+  z-index: 9999;
+  top: 800px;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 1.1s ease-in-out;
+}
+.cloud4Loading.active {
+  left: 100%;
+}
+
+.cloud5Loading {
+  position: fixed;
+  z-index: 9999;
+  bottom: 200px;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+}
+.cloud5Loading.active {
+  left: 100%;
+}
+
+.cloud6Loading {
+  position: fixed;
+  z-index: 9999;
+  bottom: -450px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.8s ease-in-out;
+}
+.cloud6Loading.active {
+  left: 100%;
+}
+
+.cloud7Loading {
+  position: fixed;
+  z-index: 9999;
+  bottom: -100px;
+  left: -70%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.9s ease-in-out;
+}
+.cloud7Loading.active {
+  left: 100%;
+}
+
+.cloud8Loading {
+  position: fixed;
+  z-index: 9999;
+  top: 800px;
+  left: -300%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 1.4s ease-in-out;
+}
+.cloud8Loading.active {
+  left: 100%;
+}
+
+.cloud9Loading {
+  position: fixed;
+  z-index: 9999;
+  bottom: -450px;
+  left: -200%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+}
+.cloud9Loading.active {
+  left: 100%;
+}
+
+.cloud10Loading {
+  position: fixed;
+  z-index: 9999;
+  bottom: -100px;
+  left: -300%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/clouds/cloud1.png");
+  opacity: 1;
+  overflow: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 1.2s ease-in-out;
+}
+.cloud10Loading.active {
+  left: 100%;
+}
+
+/*# sourceMappingURL=Loading.css.map */

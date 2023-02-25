@@ -1,0 +1,180 @@
+@import '../variables.css';
+@import url('https://fonts.cdnfonts.com/css/cera-round-pro');
+
+
+
+.testSpace{
+    padding-bottom: 600px;
+}
+
+#circle{
+    padding: 15em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: -515em;
+    margin-left: -515em;
+    background: transparent;
+    border-radius: 504em;
+    border: 500em solid rgba(0,0,0,.8);
+    opacity: 0;
+    filter: blur(298px);
+    transition: opacity .5s ease;
+}
+
+.headerIMG{
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+}
+
+.parallax {
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    top: 0;
+    left: 45px;
+    right: 0;
+    bottom: 0;
+    margin-left: -55px;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -5px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.parallax__layer img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+.parallax__cover {
+    background: transparent;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 500px;
+    z-index: 2;
+}
+
+
+.parallax__layer__0 {
+    -webkit-transform: translateZ(-300px) scale(4);
+    transform: translateZ(-300px) scale(4);
+}
+
+.parallax__layer__6 {
+    -webkit-transform: translateZ(0px) scale(1);
+    transform: translateZ(0px) scale(1);
+}
+
+.textContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: 100%;
+}
+
+.customContainer{
+    height: 100%;
+    padding-left: 10%;
+}
+
+.infoBox{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lineContainer{
+    height: 45%;
+    width: 1000px;
+}
+
+.dividerContainer{
+    position: relative;
+    top: 0;
+    left: 45px;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%);
+    height: 159px;
+}
+
+.customSectionContainer{
+    margin-top: -50px;
+}
+
+.headline{
+    font-size: 3.5rem;
+    color: var(--color_white);
+    font-family: 'Cera Round Pro', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.1666666667em;
+    height: 10%;
+    width: 1000px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.headerElement{
+    padding: 15px;
+    display: inline-block;
+}
+
+.headerOverlay{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    height: 100%;
+    left: 20%;
+    width: 55%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%);
+}
+
+.lineTopHeadlineContainer{
+    height: 100%;
+
+}
+
+.lineUnderHeadline{
+    border-right: 1px solid #ffffff;
+    max-height: 0px;
+    height: 100%;
+    transition: all 1.5s ease-in-out;
+
+}
+.lineTopHeadline{
+    border-right: 1px solid #ffffff;
+    max-height: 0px;
+    height: 100%;
+    transition: all 2s ease-in-out;
+}
+
+.parallaxContainer{
+    z-index: -1;
+    position: relative;
+}
+
+.lineUnderHeadlineContainer{
+    height: 100%;
+    padding-top: 35px;
+    padding-bottom: 50px;
+}

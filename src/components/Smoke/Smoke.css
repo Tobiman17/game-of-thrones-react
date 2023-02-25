@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+.smokeContainer {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 1;
+}
+
+@keyframes clouds-loop-1 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+.clouds-1 {
+  background-image: url("https://s.cdpn.io/15514/clouds_2.png");
+  animation: clouds-loop-1 20s infinite linear;
+}
+
+@keyframes clouds-loop-2 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+.clouds-2 {
+  background-image: url("https://s.cdpn.io/15514/clouds_1.png");
+  animation: clouds-loop-2 15s infinite linear;
+}
+
+@keyframes clouds-loop-3 {
+  to {
+    background-position: -1579px 0;
+  }
+}
+.clouds-3 {
+  background-image: url("https://s.cdpn.io/15514/clouds_3.png");
+  animation: clouds-loop-3 17s infinite linear;
+}
+
+#smokeContainer {
+  opacity: 0.3;
+}
+#smokeContainer .clouds {
+  opacity: 0.1;
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transform: scaleY(-1);
+}
+#smokeContainer .clouds-1,
+#smokeContainer .clouds-2,
+#smokeContainer .clouds-3 {
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+
+#smokeContainerTop {
+  opacity: 0.3;
+}
+#smokeContainerTop .clouds {
+  opacity: 0.1;
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+#smokeContainerTop .clouds-1,
+#smokeContainerTop .clouds-2,
+#smokeContainerTop .clouds-3 {
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+
+body a {
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 0;
+  color: #b8956b;
+  text-shadow: 0 -1px 0 rgba(250, 248, 245, 0.6), 0 2px 3px #000;
+}
+body a span {
+  display: block;
+}
+
+/*# sourceMappingURL=Smoke.css.map */

@@ -1,0 +1,218 @@
+@import '../../components/variables.css';
+@import url("https://fonts.cdnfonts.com/css/cera-round-pro");
+.loading-animation {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999;
+  background-color: red;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  transform-origin: top left;
+  transform: scale(0.61);
+  filter: brightness(70%);
+}
+
+.bg-img {
+  background-image: url("../../img/map.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: initial;
+  border: 1px solid #aaa;
+  width: 90vw;
+  height: 90vh;
+  margin: 25px auto;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.map {
+  object-fit: cover;
+}
+
+.kingslanding {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: red;
+}
+
+.mapContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  cursor: none;
+}
+
+#popup {
+  background-color: #fff;
+  border-radius: 25px;
+  height: 100%;
+}
+
+#popupContainer {
+  position: fixed;
+  margin: 100px;
+  right: 0;
+  bottom: 0;
+  height: 1000px;
+  max-height: 0;
+  width: 400px;
+  transition: max-height 0.4s ease-in-out;
+}
+#popupContainer:hover {
+  cursor: initial;
+}
+
+.popupImg {
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  background: transparent;
+  position: absolute;
+  top: -50px;
+  object-fit: cover;
+}
+
+.popupHeadline {
+  padding-top: 50px;
+}
+
+#popupContent {
+  padding: 35px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#round-vertically SPAN {
+  color: #d3d4de;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+@keyframes anim-glow {
+  0% {
+    box-shadow: 0 0 10px 10px rgba(211, 212, 222, 0);
+  }
+  50% {
+    box-shadow: 0 0 15px 15px #d3d4de;
+  }
+  100% {
+    box-shadow: 0 0 10px 10px rgba(211, 212, 222, 0);
+  }
+}
+#kingslanding:hover .dot {
+  font-size: 100px;
+}
+
+.dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px #d3d4de solid;
+}
+.dot .lable {
+  font-size: 20px;
+  font-family: "Cera Round Pro", serif;
+  letter-spacing: 3px;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+  z-index: 100;
+  position: absolute;
+}
+.dot span {
+  color: #d3d4de;
+  text-align: center;
+  font-size: 55px;
+  position: relative;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.dot:hover {
+  animation: anim-glow 2s ease-in-out infinite;
+  cursor: pointer;
+}
+.dot.active {
+  animation: anim-glow 2s ease-in-out infinite;
+}
+
+.popupHeadline {
+  font-family: "Cera Round Pro", serif;
+  font-size: 16px;
+  color: var(--color_gray);
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.popupText {
+  font-size: 16px;
+  color: var(--color_gray);
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+}
+
+.popupButton {
+  margin-top: 20px;
+  padding: 5px 10px;
+  width: fit-content;
+  background: linear-gradient(var(--color_darkGreen), var(--color_darkGreen) 50%, var(--color_black) 50%, var(--color_black));
+  background-size: 100% 200%;
+  transition: background 0.5s;
+}
+.popupButton a {
+  text-decoration: none;
+  color: var(--color_white) !important;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  cursor: pointer;
+}
+.popupButton:hover {
+  background-position: 100% 100%;
+}
+.popupButton:hover a {
+  color: var(--color_white);
+}
+
+.dark-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* change the opacity value to adjust the darkness */
+  z-index: -1;
+}
+
+/*# sourceMappingURL=map.css.map */
