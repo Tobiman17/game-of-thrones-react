@@ -1,12 +1,14 @@
+@import '../Variables/Variables.scss';
+
 .spark {
-  background-color: #DE4A00;
+  background-color: $color-spark-orange;
   font-family: 'Helvetica', sans-serif;
   visibility: hidden;
   position: absolute;
   width: 6px;
   height: 6px;
   border-radius: 30%;
-  box-shadow: 0 0 5px #AB000B;
+  box-shadow: 0 0 5px $color-spark-red;
   z-index: 10000;
 }
 

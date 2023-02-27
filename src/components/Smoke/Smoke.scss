@@ -1,7 +1,3 @@
-// Import google font
-@import url(https://fonts.googleapis.com/css?family=Oswald);
-
-
 .smokeContainer {
   position: fixed;
   z-index: 9999;
@@ -12,15 +8,11 @@
   background-size: cover;
   opacity: 1;
 }
-// Cloud vars
 $clouds:
                 ("https://s.cdpn.io/15514/clouds_2.png" 1000px 20s),
                 ("https://s.cdpn.io/15514/clouds_1.png" 1000px 15s),
                 ("https://s.cdpn.io/15514/clouds_3.png" 1579px 17s);
 
-// Animation & keyframes
-// Refactor by @HugoGiraudel
-// https://codepen.io/HugoGiraudel
 @for $i from 1 through length($clouds) {
 
   $item     : nth($clouds, $i);
@@ -94,24 +86,3 @@ $clouds:
     height:   100%;
   }
 }
-
-body {
-
-  a {
-    $color: #b8956b;
-    display: inline-block;
-    position:        relative;
-    text-align:      right;
-    text-decoration: none;
-    font-weight:     normal;
-    font-size:       1.5em;
-    line-height:     1.5em;
-    margin:          0;
-    color:           $color;
-    text-shadow:     0 -1px 0 rgba(lighten($color, 40%), 0.6),
-    0 2px 3px #000;
-
-    span { display: block; }
-  }
-}
-

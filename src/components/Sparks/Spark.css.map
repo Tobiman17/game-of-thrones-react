@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Spark.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA","file":"Spark.css"}
+{"version":3,"sourceRoot":"","sources":["Spark.scss","../Variables/Variables.scss"],"names":[],"mappings":"AAEA;EACE,kBCImB;EDHnB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA","file":"Spark.css"}

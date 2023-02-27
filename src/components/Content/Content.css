@@ -1,22 +1,25 @@
-.text{
-    z-index: 100;
-    color: var(--color_white);
-    font-size: 1.5rem;
+.text {
+  z-index: 100;
+  color: #fffffF;
+  font-size: 1.5rem;
 }
 
-.quote{
-    font-family: Philosopher, serif;
-    line-height: 3rem;
-    font-weight: 400;
-    font-style: italic;
-    letter-spacing: 0.8rem;
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
+.quote {
+  font-family: Philosopher, serif;
+  line-height: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.normalTextContainer{
-    width: 70%;
-    font-size: 16px;
-    text-align: justify;
+.normalTextContainer {
+  width: 70%;
+  font-size: 16px;
+  text-align: justify;
+  padding-bottom: 10000px;
 }
+
+/*# sourceMappingURL=Content.css.map */

@@ -66,8 +66,8 @@ function Header(props) {
             console.log("X: "+ e.clientX)
             console.log("Y: "+ e.clientY)
 
-            let bodyX = e.clientX / 15;
-            let bodyY = e.clientY / 15;
+            let bodyX = e.clientX / 25;
+            let bodyY = e.clientY / 25;
 
             document.body.style.backgroundPositionX = `${bodyX}px`;
             document.body.style.backgroundPositionY = `${bodyY}px`;
@@ -115,8 +115,6 @@ function Header(props) {
                 id="circle"
                 style={{ position: 'fixed', left: circlePosition.x, top: circlePosition.y }}
             ></div>
-
-
             <section id="parallax" className="parallaxContainer">
             <div id="snow" className="snowLayout"></div>
             <div>
@@ -127,7 +125,7 @@ function Header(props) {
                             <div className="infoBox">
                                 <div className=" lineContainer">
                                     <div id="lineTopHeadlineContainer" className="lineTopHeadlineContainer">
-                                        <div id="lineTopHeadline" className="col-lg-6 lineTopHeadline"></div>
+                                        <div id="lineTopHeadline" className="col-lg-6 lineHeadline"></div>
                                     </div>
                                 </div>
                                 <div id="headline" className="headline">
@@ -135,7 +133,7 @@ function Header(props) {
                                 </div>
                                 <div className="lineContainer">
                                     <div className="lineUnderHeadlineContainer">
-                                        <div id="lineUnderHeadline" className="col-lg-6 lineUnderHeadline"></div>
+                                        <div id="lineUnderHeadline" className="col-lg-6 lineHeadline"></div>
                                     </div>
                                 </div>
                             </div>

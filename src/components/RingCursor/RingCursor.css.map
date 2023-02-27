@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["RingCursor.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA","file":"RingCursor.css"}
+{"version":3,"sourceRoot":"","sources":["RingCursor.scss","../Variables/Variables.scss"],"names":[],"mappings":"AAGA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA,OChBY;EDiBZ;EACA;EACA;EACA","file":"RingCursor.css"}

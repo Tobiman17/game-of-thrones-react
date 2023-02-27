@@ -1,13 +1,4 @@
-@import '../../components/variables.css';
 @import url("https://fonts.cdnfonts.com/css/cera-round-pro");
-.loading-animation {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 99999;
-  background-color: red;
-}
-
 #map {
   position: absolute;
   top: 0;
@@ -23,7 +14,7 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: initial;
-  border: 1px solid #aaa;
+  border: 1px solid #fffffF;
   width: 90vw;
   height: 90vh;
   margin: 25px auto;
@@ -39,13 +30,6 @@
   object-fit: cover;
 }
 
-.kingslanding {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: red;
-}
-
 .mapContainer {
   position: fixed;
   top: 0;
@@ -59,7 +43,7 @@
 }
 
 #popup {
-  background-color: #fff;
+  background-color: #fffffF;
   border-radius: 25px;
   height: 100%;
 }
@@ -99,7 +83,7 @@
 }
 
 #round-vertically SPAN {
-  color: #d3d4de;
+  color: #fffffF;
   text-align: center;
   font-size: 30px;
   position: absolute;
@@ -139,7 +123,7 @@
   font-size: 20px;
   font-family: "Cera Round Pro", serif;
   letter-spacing: 3px;
-  color: black;
+  color: #000000;
   font-weight: bold;
   margin-top: 20px;
   text-transform: uppercase;
@@ -169,7 +153,7 @@
 .popupHeadline {
   font-family: "Cera Round Pro", serif;
   font-size: 16px;
-  color: var(--color_gray);
+  color: v #2c3338;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -177,7 +161,7 @@
 
 .popupText {
   font-size: 16px;
-  color: var(--color_gray);
+  color: #2c3338;
   opacity: 0.7;
   letter-spacing: 0.5px;
 }
@@ -186,13 +170,13 @@
   margin-top: 20px;
   padding: 5px 10px;
   width: fit-content;
-  background: linear-gradient(var(--color_darkGreen), var(--color_darkGreen) 50%, var(--color_black) 50%, var(--color_black));
+  background: linear-gradient(#405a5a, #405a5a 50%, #000000 50%, #000000);
   background-size: 100% 200%;
   transition: background 0.5s;
 }
 .popupButton a {
   text-decoration: none;
-  color: var(--color_white) !important;
+  color: #fffffF !important;
   font-size: 14px;
   letter-spacing: 1.4px;
   cursor: pointer;
@@ -201,7 +185,7 @@
   background-position: 100% 100%;
 }
 .popupButton:hover a {
-  color: var(--color_white);
+  color: #fffffF;
 }
 
 .dark-bg::before {
@@ -211,7 +195,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* change the opacity value to adjust the darkness */
+  background-color: rgba(0, 0, 0, 0.7); /* change the opacity value to adjust the darkness */
   z-index: -1;
 }
 
