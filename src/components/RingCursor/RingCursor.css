@@ -16,6 +16,27 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: none;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out, margin-top 0.5s ease-in-out, margin-left 0.5s ease-in-out;
+}
+.custom-cursor.activeDrag {
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 70px;
+  height: 70px;
+  animation: anim-glow 2s ease-in-out infinite;
+  border: 1px solid transparent;
+}
+
+@keyframes anim-glow {
+  0% {
+    box-shadow: 0 0 10px 10px rgba(211, 212, 222, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px 20px #d3d4de;
+  }
+  100% {
+    box-shadow: 0 0 10px 10px rgba(211, 212, 222, 0.5);
+  }
 }
 
 /*# sourceMappingURL=RingCursor.css.map */

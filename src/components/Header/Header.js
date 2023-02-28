@@ -20,7 +20,6 @@ const headers = {
 function Header(props) {
 
 
-    const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
 
     const headerImg = headers[props.header];
 
@@ -60,28 +59,6 @@ function Header(props) {
     }, []);
 
 
-    useEffect(() => {
-        function positionCircle(e) {
-            setCirclePosition({ x: e.clientX, y: e.clientY });
-            console.log("X: "+ e.clientX)
-            console.log("Y: "+ e.clientY)
-
-            let bodyX = e.clientX / 25;
-            let bodyY = e.clientY / 25;
-
-            document.body.style.backgroundPositionX = `${bodyX}px`;
-            document.body.style.backgroundPositionY = `${bodyY}px`;
-        }
-
-        document.addEventListener('mousemove', positionCircle);
-
-
-
-        return () => {
-            document.removeEventListener('mousemove', positionCircle);
-        };
-    }, []);
-
 
     function chk_scroll(e) {
         const elem = e.currentTarget;
@@ -111,10 +88,6 @@ function Header(props) {
 
     return (
         <>
-            <div
-                id="circle"
-                style={{ position: 'fixed', left: circlePosition.x, top: circlePosition.y }}
-            ></div>
             <section id="parallax" className="parallaxContainer">
             <div id="snow" className="snowLayout"></div>
             <div>

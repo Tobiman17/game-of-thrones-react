@@ -5,6 +5,8 @@ import WinterfellIMG from "../../img/popUp/Winterfell.jpg";
 import KingslandingIMG from "../../img/popUp/Kingslanding.jpg";
 import Loading from "../../components/Loading/Loading";
 import RingCursor from "../../components/RingCursor/RingCursor";
+import BackBTN from "../../components/BackBTN/BackBTN";
+import Menu from "../../components/Menu/Menu";
 
 
 const Map = () => {
@@ -12,17 +14,25 @@ const Map = () => {
 
     const [zoomLevel, setZoomLevel] = useState(0.61);
     const [scrollable, setScrollable] = useState(true);
-
     const [mouseDown, setMouseDown] = useState(false);
     const [draggable, setDraggable] = useState(true);
     const [startX, setStartX] = useState(0);
     const [startY, setStartY] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
     const [scrollTop, setScrollTop] = useState(0);
+    const [isDotHovered, setIsDotHovered] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+    const [isDragged, setIsDragged] = useState(false);
 
     const imageWrapperRef = useRef(null);
 
-    const [isDotHovered, setIsDotHovered] = useState(false);
+
+    const handleImageLoad = () => {
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 2000);
+
+    };
 
     const handleDotHover = () => {
         setIsDotHovered(true);
@@ -48,8 +58,9 @@ const Map = () => {
 
 
     const handleStartDragging = (e) => {
-        console.log("drag / " + draggable)
         if (draggable) {
+            setIsDragged(true);
+
             const popupContainer = document.getElementById("popupContainer");
             const popupContent = document.getElementById("popupContent");
             const popupHeadline = document.getElementById("popupHeadline");
@@ -78,21 +89,6 @@ const Map = () => {
         }
     };
 
-    useEffect(() => {
-        document.body.classList.add("dark-bg");
-    }, []);
-
-    useEffect(() => {
-        document.getElementById("map").style.transform = `scale(${zoomLevel})`;
-        document.getElementById("mapContainer").style.position = `absolute`;
-
-        setTimeout(() => {
-            document.getElementById("mapContainer").style.position = `fixed`;
-        }, 550);
-
-        changedots(zoomLevel);
-    }, [zoomLevel]);
-
     const handleWheel = (event) => {
         if (scrollable) {
             const slider = document.querySelector('.mapContainer');
@@ -115,6 +111,35 @@ const Map = () => {
     };
 
     useEffect(() => {
+        document.body.classList.add("dark-bg");
+        document.getElementById("menuBTN").addEventListener("mouseover", handleDotHover);
+        document.getElementById("menuBTN").addEventListener("mouseleave", handleDotLeave);
+        document.getElementById("menuContainer").addEventListener("mouseover", handleDotHover);
+        document.getElementById("menuContainer").addEventListener("mouseleave", handleDotLeave);
+
+    }, []);
+
+
+    useEffect(() => {
+        if (isDragged) {
+            document.getElementById("dragCursor").classList.add("activeDrag")
+        }else{
+            document.getElementById("dragCursor").classList.remove("activeDrag")
+        }
+    }, [isDragged]);
+
+    useEffect(() => {
+        document.getElementById("map").style.transform = `scale(${zoomLevel})`;
+        document.getElementById("mapContainer").style.position = `absolute`;
+
+        setTimeout(() => {
+            document.getElementById("mapContainer").style.position = `fixed`;
+        }, 550);
+
+        changedots(zoomLevel);
+    }, [zoomLevel]);
+
+    useEffect(() => {
         if (draggable) {
             const slider = document.querySelector('.mapContainer');
             const handleMouseMove = (e) => {
@@ -133,6 +158,7 @@ const Map = () => {
 
             };
             const handleStopDragging = (event) => {
+                setIsDragged(false);
                 setScrollLeft(slider.scrollLeft);
                 setScrollTop(slider.scrollTop);
 
@@ -191,7 +217,6 @@ const Map = () => {
 
                 document.querySelector(".dotContainer").appendChild(div);
                 div.appendChild(span);
-                // div.appendChild(lable);
             }
             addDotFunction();
         }
@@ -286,29 +311,22 @@ const Map = () => {
         });
     }
 
-    const [isLoading, setIsLoading] = useState(true);
-
-    const handleImageLoad = () => {
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 2000);
-
-    };
 
     return (
         <div>
             {isLoading && (
-                <Loading />
+                <Loading/>
             )}
             <div
                 id="mapContainer"
                 className="mapContainer"
             >
+                <Menu />
                 <div
                     id="image-wrapper"
                     className="imageWrapper"
                     ref={imageWrapperRef}
-                    style={{ position: "relative" }}
+                    style={{position: "relative"}}
                 >
                     <img
                         id="map"
@@ -348,20 +366,20 @@ const Map = () => {
             <div id="popupContainer" onMouseEnter={handleDotHover}
                  onMouseLeave={handleDotLeave}>
                 <div id="popup">
-                    <div id="popupContent">
-                        <img id="popupIMG" className="popupImg" src="src/pages" alt="" />
+                    <div  id="popupContent">
+                        <img id="popupIMG" className="popupImg" src="src/pages" alt=""/>
                         <div id="popupHeadline" className="popupHeadline"></div>
                         <div id="popupText" className="popupText"></div>
-                        <div className="popupButton">
-                            <a id="popupBtn" href="src/pages">
+                        <a href="src/pages" id="popupBtn"  className="popupButton">
+                            <span >
                                 Entdecken
-                            </a>
-                        </div>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <RingCursor isDotHovered={isDotHovered} />
+            <RingCursor isDotHovered={isDotHovered}/>
 
         </div>
     );

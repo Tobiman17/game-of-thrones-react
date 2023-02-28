@@ -1,6 +1,31 @@
+@import '../Variables/Variables.scss';
+
 .backBTN{
   position: fixed;
   z-index: 99999;
-  top:10px;
-  left: 10px;
+  top:20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-white;
+  border-radius: 25px;
+  background: linear-gradient(transparent, transparent 50%, $color-white 50%, $color-white);
+  background-size: 100% 200%;
+  transition: background .5s;
+
+  .backIcon{
+    font-size: 20px;
+    color: $color-white;
+  }
+
+  &:hover{
+    background-position: 100% 100%;
+
+    .backIcon{
+      color: $color-black;
+    }
+  }
 }

@@ -1,0 +1,43 @@
+.customContainerList {
+  width: 85%;
+  height: 100%;
+  padding-top: 200px;
+}
+
+.listItem {
+  color: #fffffF;
+}
+
+.horizontal-scroll-wrapper {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background: #abc;
+  overflow: scroll;
+}
+
+.horizontal-scroll-wrapper > div {
+  padding: 5px;
+  background: #cab;
+}
+
+.customList > div {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.scroll-bar {
+  background-color: #2c3338;
+}
+
+.scroll-progress {
+  max-width: 100%;
+  background-color: #afafaf;
+  height: 10px;
+}
+
+/*# sourceMappingURL=List.css.map */

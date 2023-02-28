@@ -1,0 +1,115 @@
+.menuBTN {
+  position: fixed;
+  z-index: 99999;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fffffF;
+  border-radius: 15px;
+  background: linear-gradient(transparent, transparent 50%, #fffffF 50%, #fffffF);
+  background-size: 100% 200%;
+  transition: background 0.5s;
+}
+.menuBTN .menuBTNText {
+  color: #fffffF !important;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.menuBTN:hover {
+  background-position: 100% 100%;
+  cursor: pointer;
+}
+.menuBTN:hover .menuBTNText {
+  color: #000000 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.menuContainer {
+  position: fixed;
+  z-index: 999999;
+  top: 0px;
+  right: -500px;
+  height: 100%;
+  width: 500px;
+  background-image: url("../../img/menu.jpg");
+  background-size: cover;
+  transition: right 1s ease-in-out;
+}
+.menuContainer:hover {
+  cursor: default;
+}
+.menuContainer.active {
+  right: 0;
+}
+.menuContainer .menu {
+  position: relative;
+}
+.menuContainer .menu .closeBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.menuContainer .menu .closeBtnContainer .closeBTN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #2c3338;
+  border-radius: 50%;
+  background: linear-gradient(transparent, transparent 50%, #2c3338 50%, #2c3338);
+  background-size: 100% 200%;
+  transition: background 0.5s;
+}
+.menuContainer .menu .closeBtnContainer .closeBTN:hover {
+  background-position: 100% 100%;
+  cursor: pointer;
+}
+.menuContainer .menu .closeBtnContainer .closeBTN:hover .closeIcon {
+  color: #fffffF !important;
+}
+.menuContainer .menu .closeBtnContainer .closeBTN .closeIcon {
+  padding: 15px;
+}
+.menuContainer .menu .menuTextContainer {
+  display: block;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+.menuContainer .menu .menuTextContainer .menuHeadline {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: #363636;
+  display: block;
+  padding-bottom: 15px;
+  width: fit-content;
+}
+.menuContainer .menu .menuTextContainer .menuHeadline:hover {
+  cursor: pointer;
+}
+.menuContainer .menu .menuTextContainer .menuHeadline::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #405a5a;
+  transition: width 0.5s;
+}
+.menuContainer .menu .menuTextContainer .menuHeadline:hover::after {
+  width: 100%;
+}
+
+.logoIMG {
+  padding-top: 100px;
+  width: 400px;
+  height: auto;
+}
+
+/*# sourceMappingURL=Menu.css.map */

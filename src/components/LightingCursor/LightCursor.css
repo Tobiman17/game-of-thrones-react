@@ -1,0 +1,16 @@
+#circle {
+  padding: 15em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: -515em;
+  margin-left: -515em;
+  background: transparent;
+  border-radius: 504em;
+  border: 500em solid rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  filter: blur(350px);
+  transition: opacity 0.5s ease;
+}
+
+/*# sourceMappingURL=LightCursor.css.map */

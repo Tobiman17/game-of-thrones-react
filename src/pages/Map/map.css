@@ -20,12 +20,6 @@
   margin: 25px auto;
 }
 
-.dot {
-  width: 50px;
-  height: 50px;
-  transition: all 0.5s ease-in-out;
-}
-
 .map {
   object-fit: cover;
 }
@@ -80,6 +74,8 @@
   padding: 35px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  position: relative;
+  height: 100%;
 }
 
 #round-vertically SPAN {
@@ -112,9 +108,10 @@
 }
 
 .dot {
-  position: absolute;
   width: 30px;
   height: 30px;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
   border-radius: 50%;
   background-color: transparent;
   border: 3px #d3d4de solid;
@@ -131,6 +128,7 @@
   position: absolute;
 }
 .dot span {
+  padding-top: 5px;
   color: #d3d4de;
   text-align: center;
   font-size: 55px;
@@ -167,24 +165,25 @@
 }
 
 .popupButton {
-  margin-top: 20px;
-  padding: 5px 10px;
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+  padding: 10px 20px;
   width: fit-content;
   background: linear-gradient(#405a5a, #405a5a 50%, #000000 50%, #000000);
   background-size: 100% 200%;
   transition: background 0.5s;
+  color: #fffffF !important;
+  text-decoration: none !important;
 }
 .popupButton a {
   text-decoration: none;
-  color: #fffffF !important;
   font-size: 14px;
   letter-spacing: 1.4px;
   cursor: pointer;
 }
 .popupButton:hover {
   background-position: 100% 100%;
-}
-.popupButton:hover a {
   color: #fffffF;
 }
 
@@ -195,7 +194,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* change the opacity value to adjust the darkness */
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 

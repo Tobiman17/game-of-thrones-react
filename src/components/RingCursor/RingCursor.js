@@ -19,6 +19,7 @@ const RingCursor = (props) => {
     return (
         <>
             <div
+                id="dragCursor"
                 className="custom-cursor"
                 style={{
                     display: props.isDotHovered ? "none" : "flex",

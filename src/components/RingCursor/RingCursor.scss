@@ -19,4 +19,26 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: none;
+  transition: width .5s ease-in-out, height .5s ease-in-out, margin-top .5s ease-in-out, margin-left .5s ease-in-out;
+
+  &.activeDrag{
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 70px;
+    height: 70px;
+    animation: anim-glow 2s ease-in-out infinite;
+    border: 1px solid transparent;
+  }
+}
+
+@keyframes anim-glow {
+  0% {
+    box-shadow: 0 0 10px 10px rgba($color-dark-white, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px 20px rgba($color-dark-white, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px 10px rgba($color-dark-white, 0.5);
+  }
 }

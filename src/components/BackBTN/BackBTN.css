@@ -1,8 +1,28 @@
 .backBTN {
   position: fixed;
   z-index: 99999;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fffffF;
+  border-radius: 25px;
+  background: linear-gradient(transparent, transparent 50%, #fffffF 50%, #fffffF);
+  background-size: 100% 200%;
+  transition: background 0.5s;
+}
+.backBTN .backIcon {
+  font-size: 20px;
+  color: #fffffF;
+}
+.backBTN:hover {
+  background-position: 100% 100%;
+}
+.backBTN:hover .backIcon {
+  color: #000000;
 }
 
 /*# sourceMappingURL=BackBTN.css.map */

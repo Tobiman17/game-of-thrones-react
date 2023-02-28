@@ -5,6 +5,8 @@ import {BrowserRouter, Route, Routes, Link} from "react-router-dom";
 import Winterfell from "./pages/Winterfell";
 import Kingslanding from "./pages/Kingslanding";
 import { PageTransition } from '@steveeeie/react-page-transition';
+import Figuren from "./pages/Figuren";
+import Orte from "./pages/Orte";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
                         <Route path="/map" element={<Map/>}/>
                         <Route path="/winterfell" element={<Winterfell/>}/>
                         <Route path="/kingslanding" element={<Kingslanding/>}/>
+                        <Route path="/figuren" element={<Figuren/>}/>
+                        <Route path="/orte" element={<Orte/>}/>
                     </Routes>
                 </BrowserRouter>
             </div>
