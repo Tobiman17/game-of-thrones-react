@@ -1,7 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './Header.css';
-import winterfellHeader from "../../img/headers/winterfellHeader.jpg";
-import kingslandingHeader from "../../img/headers/kingslandingHeader.webp";
 import ReactDOM from 'react-dom'
 import Snowfall from 'react-snowfall'
 import $ from "jquery";
@@ -12,10 +10,15 @@ import Headline from "../Headline/Headline";
 import { TweenLite, Linear, Back, Power1, gsap } from 'gsap';
 import { CSSPlugin } from "gsap/CSSPlugin";
 
+import winterfellHeader from "../../img/headers/winterfellHeader.jpg";
+import kingslandingHeader from "../../img/headers/kingslandingHeader.webp";
+import eddardHeader from "../../img/headers/eddardHeader.png";
+
 
 const headers = {
     winterfellHeader,
     kingslandingHeader,
+    eddardHeader,
 };
 function Header(props) {
 

@@ -7,6 +7,7 @@ import Kingslanding from "./pages/Kingslanding";
 import { PageTransition } from '@steveeeie/react-page-transition';
 import Figuren from "./pages/Figuren";
 import Orte from "./pages/Orte";
+import Eddard from "./pages/Figuren/Eddard";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                         <Route path="/kingslanding" element={<Kingslanding/>}/>
                         <Route path="/figuren" element={<Figuren/>}/>
                         <Route path="/orte" element={<Orte/>}/>
+                        <Route path="/eddard" element={<Eddard/>}/>
                     </Routes>
                 </BrowserRouter>
             </div>

@@ -91,11 +91,44 @@ const Headline = (props) => {
                 </div>
             );
             break;
-        case "G":
+        case "Eddard":
             headlineDiv = (
                 <div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                        E
+                    </div>
                     <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                        G
+                        D
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                        D
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                        A
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        R
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                        D
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        S
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        T
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                        A
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                        R
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                        K
                     </div>
                 </div>
             );

@@ -1,60 +1,88 @@
 import React, { useState } from "react";
 import BackBTN from "../components/BackBTN/BackBTN";
 import Menu from "../components/Menu/Menu";
-import LightCursor from "../components/LightingCursor/LightCursor";
 import "./List.css";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import Stark from "../img/stark/stark.png";
+
+import Eddard from "../img/stark/eddard.png";
+import Catlyn from "../img/stark/catlyn.png";
+import Sansa from "../img/stark/sansa.png";
+import Arya from "../img/stark/arya.png";
+import Jon from "../img/stark/jon.png";
+import Rickon from "../img/stark/rickon.png";
+import Bran from "../img/stark/bran.png";
+import Rob from "../img/stark/rob.png";
+
+
 
 const Figuren = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const handleScroll = (event) => {
-        console.log("HELP")
-        const wrapper = event.target;
-        if (wrapper) {
-            const scrollPercentage = wrapper.scrollLeft / wrapper.scrollWidth * 240;
-            setScrollPosition(scrollPercentage);
-            console.log(wrapper.scrollLeft)
-        }
-    };
+    const [progress, setProgress] = useState(0);
 
+    const handleSlideChange = (swiper) => {
+        const length = swiper.slides.length -3;
+        const progress = (swiper.activeIndex / length) * 100;
+        setProgress(progress);
+    };
 
     return (
         <>
             <BackBTN />
             <Menu />
-            <LightCursor />
             <div className="d-flex justify-content-center align-items-center">
                 <div className="container customContainerList">
-                    <div className="row">
-                        <div className="col-lg-2">test</div>
-                        <div className="col-lg-10">
-                            <div
-                                className="horizontal-scroll-wrapper customList"
-                                onScroll={handleScroll}
+                    <div className="row listContainer ">
+                        <div className="col-lg-3">
+                            <img className="houseLogo" src={Stark}  alt="Stark"/>
+                        </div>
+                        <div className="col-lg-9">
+                            <Swiper
+                                slidesPerView={3}
+                                centeredSlides={false}
+                                spaceBetween={30}
+                                grabCursor={true}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                className="mySwiper"
+                                onSlideChange={handleSlideChange}
                             >
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                                <div className="listItem">TEST</div>
-                            </div>
-                            <div className="scroll-bar">
+                                <SwiperSlide>
+                                    <a href="/eddard">
+                                    <img className="figureIMG" src={Eddard}  alt="Eddard"/>
+                                    </a>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Catlyn}  alt="Catlyn"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Rob}  alt="Rob"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Jon}  alt="Jon"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Sansa}  alt="Sansa"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Arya}  alt="Arya"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Bran}  alt="Bran"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Rickon}  alt="Rickon"/>
+                                </SwiperSlide>
+                            </Swiper>
+                            <div className="swiper-pagination-custom">
                                 <div
-                                    className="scroll-progress"
-                                    style={{ width: `${scrollPosition}%` }}
-                                ></div>
+                                    className="swiper-pagination-custom-progress starkList"
+                                    style={{ width: `${progress}%` }}
+                                />
                             </div>
                         </div>
                     </div>
