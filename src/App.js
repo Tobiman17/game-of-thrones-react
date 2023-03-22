@@ -13,6 +13,7 @@ import DragonStone from "./pages/Locations/DragonStone";
 import Catlyn from "./pages/Figuren/Catlyn";
 import Kingslanding from "./pages/Locations/Kingslanding";
 import Rob from "./pages/Figuren/Rob";
+import Jon from "./pages/Figuren/Jon";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
                         <Route path="/catlyn" element={<Catlyn/>}/>
                         <Route path="/figuren" element={<Figuren/>}/>
                         <Route path="/rob" element={<Rob/>}/>
+                        <Route path="/jon" element={<Jon/>}/>
 
                     </Routes>
                 </BrowserRouter>

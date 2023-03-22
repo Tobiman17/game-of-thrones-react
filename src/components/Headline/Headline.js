@@ -337,6 +337,36 @@ const Headline = (props) => {
                 </div>
             );
             break;
+        case "Jon":
+            headlineDiv = (
+                <div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                        J
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                        O
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        N
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                        S
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        N
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        O
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                        W
+                    </div>
+                </div>
+            );
+            break;
         case "F":
             headlineDiv = (
                 <div>

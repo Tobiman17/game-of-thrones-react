@@ -20,6 +20,7 @@ import dragonStoneHeader from "../../img/headers/dragonStoneHeader.webp";
 import eddardHeader from "../../img/headers/eddardHeader.png";
 import catlynHeader from "../../img/headers/catlynHeader.jpeg";
 import robHeader from "../../img/headers/robHeader.webp";
+import jonHeader from "../../img/headers/jonHeader.webp";
 
 
 const headers = {
@@ -31,6 +32,7 @@ const headers = {
     dragonStoneHeader,
     catlynHeader,
     robHeader,
+    jonHeader,
 };
 function Header(props) {
 

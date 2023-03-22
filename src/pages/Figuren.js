@@ -75,7 +75,9 @@ const Figuren = () => {
                                     </a>
                                 </SwiperSlide>
                                 <SwiperSlide>
+                                    <a href="/jon">
                                     <img className="figureIMG" src={Jon}  alt="Jon"/>
+                                    </a>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <img className="figureIMG" src={Sansa}  alt="Sansa"/>

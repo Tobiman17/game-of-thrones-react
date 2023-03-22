@@ -7,7 +7,7 @@ import Smoke from "../../components/Smoke/Smoke";
 import Menu from "../../components/Menu/Menu";
 import LightCursor from "../../components/LightingCursor/LightCursor";
 
-const Rob = () => {
+const Jon = () => {
     return (
         <>
             <BackBTN/>
@@ -15,12 +15,12 @@ const Rob = () => {
             <LightCursor />
 
             <div id="pageContent">
-                <Header header={"robHeader"} title={"Rob"}/>
+                <Header header={"jonHeader"} title={"Jon"}/>
 
                 <Content
-                    quote={'"Tell Lord Tywin winter is coming for him. Twenty thousand northerners marching south to find out if he really does shit gold"'}
-                    quotePerson={"-Rob Stark"}
-                    description={"Rob Stark ist der älteste Sohn von Eddard Stark. Er wurde in Staffel 1 Folge 10 zum König des Nordens ernannt."}/>
+                    quote={'"Love Is The Death Of Duty."'}
+                    quotePerson={"-Jon Snow"}
+                    description={"Jon Snow, ist der Sohn von Rhaegar Targaryen und Lyanna Stark. Er wurde von Eddard Stark als Bastard großgezogen."}/>
             </div>
             <Smoke />
             <Sparks />
@@ -28,4 +28,4 @@ const Rob = () => {
     )
 }
 
-export default Rob;
+export default Jon;
