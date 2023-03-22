@@ -8,15 +8,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #fffffF;
+  border: 1px solid #FFF;
   border-radius: 25px;
-  background: linear-gradient(transparent, transparent 50%, #fffffF 50%, #fffffF);
+  background: linear-gradient(transparent, transparent 50%, #FFF 50%, #FFF);
   background-size: 100% 200%;
   transition: background 0.5s;
 }
 .backBTN .backIcon {
   font-size: 20px;
-  color: #fffffF;
+  color: #FFF;
 }
 .backBTN:hover {
   background-position: 100% 100%;

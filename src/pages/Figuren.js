@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import Stark from "../img/stark/stark.png";
+import Targayren from "../img/targaryen/targaryenLogo.png";
 
 import Eddard from "../img/stark/eddard.png";
 import Catlyn from "../img/stark/catlyn.png";
@@ -21,19 +22,26 @@ import Rob from "../img/stark/rob.png";
 
 
 const Figuren = () => {
-    const [progress, setProgress] = useState(0);
+    const [progressStark, setProgressStark] = useState(0);
+    const [progressTargaryen, setProgressTargaryen] = useState(0);
 
-    const handleSlideChange = (swiper) => {
+    const handleSlideChangeStark = (swiper) => {
         const length = swiper.slides.length -3;
-        const progress = (swiper.activeIndex / length) * 100;
-        setProgress(progress);
+        const progressStark = (swiper.activeIndex / length) * 100;
+        setProgressStark(progressStark);
     };
+    const handleSlideChangeTargaryen = (swiper) => {
+        const length = swiper.slides.length -3;
+        const progressTargaryen = (swiper.activeIndex / length) * 100;
+        setProgressTargaryen(progressTargaryen);
+    };
+
 
     return (
         <>
             <BackBTN />
             <Menu />
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center figurenList">
                 <div className="container customContainerList">
                     <div className="row listContainer ">
                         <div className="col-lg-3">
@@ -49,7 +57,62 @@ const Figuren = () => {
                                     clickable: true,
                                 }}
                                 className="mySwiper"
-                                onSlideChange={handleSlideChange}
+                                onSlideChange={handleSlideChangeStark}
+                            >
+                                <SwiperSlide>
+                                    <a href="/eddard">
+                                    <img className="figureIMG" src={Eddard}  alt="Eddard"/>
+                                    </a>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <a href="/catlyn">
+                                    <img className="figureIMG" src={Catlyn}  alt="Catlyn"/>
+                                    </a>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <a href="/rob">
+                                    <img className="figureIMG" src={Rob}  alt="Rob"/>
+                                    </a>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Jon}  alt="Jon"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Sansa}  alt="Sansa"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Arya}  alt="Arya"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Bran}  alt="Bran"/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className="figureIMG" src={Rickon}  alt="Rickon"/>
+                                </SwiperSlide>
+                            </Swiper>
+                            <div className="swiper-pagination-custom">
+                                <div
+                                    className="swiper-pagination-custom-progress starkList"
+                                    style={{ width: `${progressStark}%` }}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row listContainer ">
+                        <div className="col-lg-3">
+                            <img className="houseLogo" src={Targayren}  alt="Targayren"/>
+                        </div>
+                        <div className="col-lg-9">
+                            <Swiper
+                                slidesPerView={3}
+                                centeredSlides={false}
+                                spaceBetween={30}
+                                grabCursor={true}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                className="mySwiper"
+                                onSlideChange={handleSlideChangeTargaryen}
                             >
                                 <SwiperSlide>
                                     <a href="/eddard">
@@ -81,7 +144,7 @@ const Figuren = () => {
                             <div className="swiper-pagination-custom">
                                 <div
                                     className="swiper-pagination-custom-progress starkList"
-                                    style={{ width: `${progress}%` }}
+                                    style={{ width: `${progressTargaryen}%` }}
                                 />
                             </div>
                         </div>

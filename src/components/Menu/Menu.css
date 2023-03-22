@@ -6,14 +6,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #fffffF;
+  border: 1px solid #FFF;
   border-radius: 15px;
-  background: linear-gradient(transparent, transparent 50%, #fffffF 50%, #fffffF);
+  background: linear-gradient(transparent, transparent 50%, #FFF 50%, #FFF);
   background-size: 100% 200%;
   transition: background 0.5s;
 }
 .menuBTN .menuBTNText {
-  color: #fffffF !important;
+  color: #FFF !important;
   padding: 10px 20px;
   text-transform: uppercase;
 }
@@ -73,7 +73,7 @@ a {
   cursor: pointer;
 }
 .menuContainer .menu .closeBtnContainer .closeBTN:hover .closeIcon {
-  color: #fffffF !important;
+  color: #FFF !important;
 }
 .menuContainer .menu .closeBtnContainer .closeBTN .closeIcon {
   padding: 15px;

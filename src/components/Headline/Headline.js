@@ -91,6 +91,135 @@ const Headline = (props) => {
                 </div>
             );
             break;
+        case "CasterlyRock":
+            headlineDiv = (
+                <div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+                        C
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                        A
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                        S
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                        T
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                        E
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        R
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                        L
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        Y
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                        R
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                        O
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                        C
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+                        K
+                    </div>
+                </div>
+            );
+            break;
+        case "CastleBlack":
+            headlineDiv = (
+                <div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                        C
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                        A
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                        S
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                        T
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        L
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                        E
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        B
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        L
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                        A
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                        C
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                        K
+                    </div>
+                </div>
+            );
+            break;
+        case "DragonStone":
+            headlineDiv = (
+                <div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                        D
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                        R
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                        A
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                        G
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        O
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                        N
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        S
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        T
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                        O
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                        N
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                        E
+                    </div>
+                </div>
+            );
+            break;
         case "Eddard":
             headlineDiv = (
                 <div>
@@ -128,6 +257,81 @@ const Headline = (props) => {
                         R
                     </div>
                     <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                        K
+                    </div>
+                </div>
+            );
+            break;
+        case "Catlyn":
+            headlineDiv = (
+                <div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                        C
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                        A
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                        T
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                        L
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        Y
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                        N
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        S
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        T
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                        A
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                        R
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                        K
+                    </div>
+                </div>
+            );
+            break;
+        case "Rob":
+            headlineDiv = (
+                <div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                        R
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                        O
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                        B
+                    </div>
+                    <div className="headerElement" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                        S
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        T
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        A
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                        R
+                    </div>
+                    <div className="headerElement" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                         K
                     </div>
                 </div>

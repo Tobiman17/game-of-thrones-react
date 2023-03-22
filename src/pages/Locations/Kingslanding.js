@@ -7,7 +7,7 @@ import Smoke from "../../components/Smoke/Smoke";
 import Menu from "../../components/Menu/Menu";
 import LightCursor from "../../components/LightingCursor/LightCursor";
 
-const Eddard = () => {
+const Kingslanding = () => {
     return (
         <>
             <BackBTN/>
@@ -15,17 +15,18 @@ const Eddard = () => {
             <LightCursor />
 
             <div id="pageContent">
-                <Header header={"eddardHeader"} title={"Eddard"}/>
-
+                <Header header={"kingslandingHeader"} title={"Kingslanding"}/>
                 <Content
-                    quote={'"The man who passes the sentence should swing the sword."'}
-                    quotePerson={"-Eddard Stark"}
-                    description={"Eddard Stark ist zu Beginn der ersten Staffel der Lord von Winterfell und Wächter des Nordens."}/>
+                    quote={'"In King\'s Landing, there are two sorts of people. The players and the pieces ... Every man\'s a piece to start with, and every maid as well. Even some who think they are players. "'}
+                    description={"Kingslanding ist die Hauptstadt von Westeros und der sieben Königslande. Es ist die größte Stadt von Westeros und wurde von Aegon Targaryen (Der Eroberer) als Sitz seines Hauses erbaut."}
+                    quotePerson={"-Petyr Baelish"}
+                />
             </div>
+
             <Smoke />
             <Sparks />
         </>
     )
 }
 
-export default Eddard;
+export default Kingslanding;

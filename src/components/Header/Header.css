@@ -61,7 +61,7 @@
 
 .headline {
   font-size: 3.5rem;
-  color: #fffffF;
+  color: #FFF;
   font-family: "Cera Round Pro", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -79,10 +79,14 @@
 }
 
 .lineHeadline {
-  border-right: 1px solid #fffffF;
+  border-right: 1px solid #FFF;
   max-height: 0px;
   height: 100%;
-  transition: all 1.5s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.lineTopHeadlineContainer {
+  padding-bottom: 45px;
 }
 
 .parallaxContainer {

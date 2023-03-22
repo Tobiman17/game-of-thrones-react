@@ -7,7 +7,7 @@ import Smoke from "../../components/Smoke/Smoke";
 import Menu from "../../components/Menu/Menu";
 import LightCursor from "../../components/LightingCursor/LightCursor";
 
-const Eddard = () => {
+const DragonStone = () => {
     return (
         <>
             <BackBTN/>
@@ -15,12 +15,12 @@ const Eddard = () => {
             <LightCursor />
 
             <div id="pageContent">
-                <Header header={"eddardHeader"} title={"Eddard"}/>
-
+                <Header header={"dragonStoneHeader"} title={"DragonStone"}/>
                 <Content
-                    quote={'"The man who passes the sentence should swing the sword."'}
-                    quotePerson={"-Eddard Stark"}
-                    description={"Eddard Stark ist zu Beginn der ersten Staffel der Lord von Winterfell und Wächter des Nordens."}/>
+                    quote={'"Perhaps the old tales were true, and Dragonstone was built with the stones of hell."'}
+                    description={"Dragonstone ist der Hauptsitz der Targaryens. Aegon der Eroberer eroberte von hier aus Westeros, mit seinen 2 Schwesterfrauen."}
+                    quotePerson={"-Davos Seaworth"}
+                />
             </div>
             <Smoke />
             <Sparks />
@@ -28,4 +28,4 @@ const Eddard = () => {
     )
 }
 
-export default Eddard;
+export default DragonStone;

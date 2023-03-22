@@ -1,13 +1,21 @@
 import React, {useEffect, useRef, useState} from "react";
 import MapIMG from "../../img/mapV2.jpg";
 import './map.css';
-import WinterfellIMG from "../../img/popUp/Winterfell.jpg";
-import KingslandingIMG from "../../img/popUp/Kingslanding.jpg";
 import Loading from "../../components/Loading/Loading";
 import RingCursor from "../../components/RingCursor/RingCursor";
 import BackBTN from "../../components/BackBTN/BackBTN";
 import Menu from "../../components/Menu/Menu";
+import ReactDOM from 'react-dom';
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
+
+import WinterfellIMG from "../../img/popUp/Winterfell.jpg";
+import KingslandingIMG from "../../img/popUp/Kingslanding.jpg";
+import CasterlyRockIMG from "../../img/popUp/CasterlyRock.jpeg";
+import CastleBlackIMG from "../../img/popUp/CastleBlack.webp";
+import DragonStoneIMG from "../../img/popUp/dragonStone.jpeg";
 
 const Map = () => {
     const [popup, setPopup] = useState(null);
@@ -46,6 +54,9 @@ const Map = () => {
     const popUpImages = {
         WinterfellIMG,
         KingslandingIMG,
+        CasterlyRockIMG,
+        CastleBlackIMG,
+        DragonStoneIMG,
     };
 
     const handlePopup = (e) => {
@@ -193,11 +204,16 @@ const Map = () => {
                 div.id = area.getAttribute("name") + "DOT";
 
                 let span = document.createElement("span");
-                span.innerHTML = "&bull;";
+                let icon = <FontAwesomeIcon className="dotIcon" icon={faCircle} />;
+                ReactDOM.render(icon, span);
+
+
 
                 let lable = document.createElement("span");
                 lable.innerHTML = area.getAttribute("name");
                 lable.classList.add("lable")
+
+
 
                 div.setAttribute('data-title', area.getAttribute("name"));
                 div.setAttribute('data-text', area.getAttribute("data-popup"));
@@ -351,10 +367,43 @@ const Map = () => {
                             id="winterfell"
                             className="place"
                             name="Winterfell"
-                            data-popup="Hauptstadt der Starks"
+                            data-popup="Hauptsitz der Starks. Hauptstadt des Nordens."
                             alt="WinterfellMap"
                             noHref=""
                             coords="1201,771,82"
+                            shape="circle"
+                            onClick={handlePopup}
+                        />
+                        <area
+                            id="casterlyRock"
+                            className="place"
+                            name="CasterlyRock"
+                            data-popup="Hauptsitz der Lannisters. Hauptstadts des Westens."
+                            alt="CasterlyRockMap"
+                            noHref=""
+                            coords="740,1940,32"
+                            shape="circle"
+                            onClick={handlePopup}
+                        />
+                        <area
+                            id="castleBlack"
+                            className="place"
+                            name="CastleBlack"
+                            data-popup="Die größte bemannte Festung der Mauer. Bewacht von den Nachtwache."
+                            alt="castleBlackMap"
+                            noHref=""
+                            coords="1423,275,30"
+                            shape="circle"
+                            onClick={handlePopup}
+                        />
+                        <area
+                            id="dragonStone"
+                            className="place"
+                            name="DragonStone"
+                            data-popup="Hauptsitz der Targaryens."
+                            alt="dragonStoneMap"
+                            noHref=""
+                            coords="1767,1928,32"
                             shape="circle"
                             onClick={handlePopup}
                         />

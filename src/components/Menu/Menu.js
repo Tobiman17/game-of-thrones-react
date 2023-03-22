@@ -31,7 +31,7 @@ const BackBTN = () => {
                     <span className="menuBTNText">Menu</span>
                 </div>
             </div>
-            <div id="menuContainer" className="menuContainer">
+            <div id="menuContainer" className=" menuContainer ">
                 <div className="menu">
                     <div className="closeBtnContainer">
                         <div onClick={toggleMenuStatus} className="closeBTN">

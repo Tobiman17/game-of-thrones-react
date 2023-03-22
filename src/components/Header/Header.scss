@@ -87,8 +87,11 @@
   border-right: 1px solid $color-white;
   max-height: 0px;
   height: 100%;
-  transition: all 1.5s ease-in-out;
+  transition: all 2s ease-in-out;
+}
 
+.lineTopHeadlineContainer{
+  padding-bottom: 45px;
 }
 
 .parallaxContainer{

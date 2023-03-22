@@ -1,7 +1,6 @@
 .text {
   z-index: 100;
-  color: #fffffF;
-  font-size: 1.5rem;
+  color: #FFF;
 }
 
 .quote {
@@ -15,11 +14,44 @@
   text-align: center;
 }
 
+.quotePerson {
+  font-family: Philosopher, serif;
+  line-height: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: right;
+  padding-top: 50px;
+  width: 100%;
+}
+.quotePerson a {
+  z-index: 1000;
+  position: relative;
+  background: linear-gradient(transparent, transparent 50%, #405a5a 50%, #405a5a);
+  color: #FFF;
+  background-size: 100% 200%;
+  transition: background 0.5s;
+}
+.quotePerson a:hover {
+  background-position: 100% 100%;
+  cursor: pointer;
+}
+
 .normalTextContainer {
   width: 70%;
-  font-size: 16px;
+  font-size: 1.25rem;
   text-align: justify;
-  padding-bottom: 10000px;
+}
+
+.quotePerson {
+  color: #FFF;
+}
+
+.customSectionContainer {
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-bottom: 1000px;
 }
 
 /*# sourceMappingURL=Content.css.map */

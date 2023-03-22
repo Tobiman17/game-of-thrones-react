@@ -5,20 +5,32 @@ import Snowfall from 'react-snowfall'
 import $ from "jquery";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import kingslanding from "../../pages/Kingslanding";
+import kingslanding from "../../pages/Locations/Kingslanding";
 import Headline from "../Headline/Headline";
 import { TweenLite, Linear, Back, Power1, gsap } from 'gsap';
 import { CSSPlugin } from "gsap/CSSPlugin";
 
 import winterfellHeader from "../../img/headers/winterfellHeader.jpg";
 import kingslandingHeader from "../../img/headers/kingslandingHeader.webp";
+import casterlyRockHeader from "../../img/headers/casterlyRockHeader.webp";
+import castleBlackHeader from "../../img/headers/castleBlackHeader.jpeg";
+import dragonStoneHeader from "../../img/headers/dragonStoneHeader.webp";
+
+
 import eddardHeader from "../../img/headers/eddardHeader.png";
+import catlynHeader from "../../img/headers/catlynHeader.jpeg";
+import robHeader from "../../img/headers/robHeader.webp";
 
 
 const headers = {
     winterfellHeader,
     kingslandingHeader,
     eddardHeader,
+    casterlyRockHeader,
+    castleBlackHeader,
+    dragonStoneHeader,
+    catlynHeader,
+    robHeader,
 };
 function Header(props) {
 
@@ -38,16 +50,16 @@ function Header(props) {
 
         setTimeout(function () {
             document.getElementById("lineUnderHeadline").style.maxHeight = "1000px";
-        }, 1050);
+        }, 750);
 
         setTimeout(function () {
             document.getElementById("lineTopHeadlineContainer").style.display = "flex";
             document.getElementById("lineTopHeadlineContainer").style.alignItems = "end";
-        }, 1300);
+        }, 1000);
 
         setTimeout(function () {
             document.getElementById("lineTopHeadline").style.maxHeight = "0";
-        }, 1170);
+        }, 1000);
 
     }, []);
 

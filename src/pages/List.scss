@@ -7,9 +7,18 @@
 
 .listContainer{
   padding-top: 150px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.customContainerList{
+}
+
+.figurenList{
+  padding-right: 150px;
+  padding-left: 150px;
 }
 
 .swiper-slide {

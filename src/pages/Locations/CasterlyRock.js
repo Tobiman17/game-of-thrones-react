@@ -7,7 +7,7 @@ import Smoke from "../../components/Smoke/Smoke";
 import Menu from "../../components/Menu/Menu";
 import LightCursor from "../../components/LightingCursor/LightCursor";
 
-const Eddard = () => {
+const CasterlyRock = () => {
     return (
         <>
             <BackBTN/>
@@ -15,12 +15,12 @@ const Eddard = () => {
             <LightCursor />
 
             <div id="pageContent">
-                <Header header={"eddardHeader"} title={"Eddard"}/>
-
+                <Header header={"casterlyRockHeader"} title={"CasterlyRock"}/>
                 <Content
-                    quote={'"The man who passes the sentence should swing the sword."'}
-                    quotePerson={"-Eddard Stark"}
-                    description={"Eddard Stark ist zu Beginn der ersten Staffel der Lord von Winterfell und Wächter des Nordens."}/>
+                    quote={'"Casterly Rock is an impregnable fortress. But as a good friend of mine once said, Give me ten good men…and I’ll impregnate the bitch!"'}
+                    description={"Casterly Rock ist der Hauptsitz der Lannisters und die Hauptstadt des Westens."}
+                    quotePerson={"-Tyrion Lannister"}
+                />
             </div>
             <Smoke />
             <Sparks />
@@ -28,4 +28,4 @@ const Eddard = () => {
     )
 }
 
-export default Eddard;
+export default CasterlyRock;
