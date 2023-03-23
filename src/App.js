@@ -14,6 +14,12 @@ import Catlyn from "./pages/Figuren/Catlyn";
 import Kingslanding from "./pages/Locations/Kingslanding";
 import Rob from "./pages/Figuren/Rob";
 import Jon from "./pages/Figuren/Jon";
+import LandingPage from "./components/LandingPage/LandingPage";
+import Dany from "./pages/Figuren/Dany";
+import Tywin from "./pages/Figuren/Tywin";
+import Tyrion from "./pages/Figuren/Tyrion";
+import Cersei from "./pages/Figuren/Cersei";
+import Jaime from "./pages/Figuren/Jaime";
 
 
 function App() {
@@ -22,7 +28,7 @@ function App() {
             <div className={"allContent"}>
                 <BrowserRouter>
                     <Routes>
-                        <Route index element={<Map/>}/>
+                        <Route index element={<LandingPage/>}/>
                         <Route path="/map" element={<Map/>}/>
                         <Route path="/winterfell" element={<Winterfell/>}/>
                         <Route path="/kingslanding" element={<Kingslanding/>}/>
@@ -35,7 +41,11 @@ function App() {
                         <Route path="/figuren" element={<Figuren/>}/>
                         <Route path="/rob" element={<Rob/>}/>
                         <Route path="/jon" element={<Jon/>}/>
-
+                        <Route path="/daenerys" element={<Dany/>}/>
+                        <Route path="/tywin" element={<Tywin/>}/>
+                        <Route path="/tyrion" element={<Tyrion/>}/>
+                        <Route path="/cersei" element={<Cersei/>}/>
+                        <Route path="/jaime" element={<Jaime/>}/>
                     </Routes>
                 </BrowserRouter>
             </div>

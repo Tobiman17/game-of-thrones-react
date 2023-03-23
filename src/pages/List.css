@@ -41,6 +41,16 @@
   transition: width 0.3s ease-in-out;
 }
 
+.targaryenList {
+  background-color: #460303;
+  transition: width 0.3s ease-in-out;
+}
+
+.lannisterList {
+  background-color: #cc1010;
+  transition: width 0.3s ease-in-out;
+}
+
 .houseLogo {
   width: 100%;
 }
@@ -49,6 +59,32 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.figurenContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+.figurenContainer:hover .figurenName {
+  bottom: 50px;
+  transition: all 0.5s ease-in-out;
+  opacity: 1 !important;
+}
+
+.figurenName {
+  font-family: "Cera Round Pro", sans-serif;
+  position: absolute;
+  z-index: 100000;
+  bottom: 0px;
+  opacity: 0;
+  color: #d3d4de;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=List.css.map */

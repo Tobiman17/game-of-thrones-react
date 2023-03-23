@@ -21,6 +21,12 @@ import eddardHeader from "../../img/headers/eddardHeader.png";
 import catlynHeader from "../../img/headers/catlynHeader.jpeg";
 import robHeader from "../../img/headers/robHeader.webp";
 import jonHeader from "../../img/headers/jonHeader.webp";
+import danyHeader from "../../img/headers/danyHeader.jpeg";
+import tywinHeader from "../../img/headers/tywinHeader.jpeg";
+import tyrionHeader from "../../img/headers/tyrion.jpeg";
+import cerseiHeader from "../../img/headers/cerseiHeader.jpeg";
+import jaimeHeader from "../../img/headers/jaimeHeader.jpeg";
+
 
 
 const headers = {
@@ -33,6 +39,11 @@ const headers = {
     catlynHeader,
     robHeader,
     jonHeader,
+    danyHeader,
+    tywinHeader,
+    tyrionHeader,
+    cerseiHeader,
+    jaimeHeader,
 };
 function Header(props) {
 

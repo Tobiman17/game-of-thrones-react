@@ -22,7 +22,7 @@ const Winterfell = () => {
             <Content quote={'"There must always be a Stark in Winterfell."'}
                      description={"Winterfell ist der Hauptsitz der Starks und die Hauptstadt des Nordens. Die Burg wurde von Brandon dem Erbauer erbaut, lange bevor die Targayrens an der Macht waren."}
                      quotePerson={"-Catelyn Stark"}
-                     quotePersonLink={"/Eddard"}
+                     quotePersonLink={"/catlyn"}
             />
             <Smoke />
         </>
