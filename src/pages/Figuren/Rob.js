@@ -20,7 +20,7 @@ const Rob = () => {
                 <Content
                     quote={'"Tell Lord Tywin winter is coming for him. Twenty thousand northerners marching south to find out if he really does shit gold"'}
                     quotePerson={"-Rob Stark"}
-                    description={"Rob Stark ist der älteste Sohn von Eddard Stark. Er wurde in Staffel 1 Folge 10 zum König des Nordens ernannt."}/>
+                    description={"Rob Stark ist der älteste Sohn von Eddard Stark. Er wurde in Staffel 1 Folge 10 zum König des Nordens ernannt. Er ging in den Krieg um seinen Vater aus Königsmund zu befreien."}/>
             </div>
             <Smoke />
             <Sparks />

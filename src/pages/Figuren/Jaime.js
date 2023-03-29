@@ -19,7 +19,7 @@ const Jaime = () => {
                 <Content
                     quote={'"When You Play The Game Of Thrones, You Win Or You Die."'}
                     quotePerson={"-Jaime Lannister"}
-                    description={"Jaime Lannister ist der Sohn von Tywin Lannister. Er und seine Schwester Cersei Lannister bekommen 3 Kinder: Jofrei, Tommen und Myrcella."}/>
+                    description={"Jaime Lannister ist der Sohn von Tywin Lannister. Er und seine Schwester Cersei Lannister bekommen 3 Kinder: Jofrei, Tommen und Myrcella. Er ist der Welt als Königsmörder bekannt, da er Aerys, dem irren König, sein Schwert in den Rücken stach."}/>
             </div>
             <Smoke />
             <Sparks />

@@ -19,7 +19,7 @@ const Dany = () => {
                 <Content
                     quote={'"Dracarys"'}
                     quotePerson={"-Daenerys Targaryen"}
-                    description={"Daenerys Targaryen ist die Tochter von Aerys Targaryen, dem Irren König. "}/>
+                    description={"Daenerys Targaryen ist die Tochter von Aerys Targaryen, dem Irren König. Sie und ihrem Bruder Viserys flüchteten nach Essos, nachdem Robert Baratheons Rebellion eefolgreich war und deren Vater von Jaime Lannister getötet wurde."}/>
             </div>
             <Smoke />
             <Sparks />

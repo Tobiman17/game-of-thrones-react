@@ -20,6 +20,13 @@ import Tywin from "./pages/Figuren/Tywin";
 import Tyrion from "./pages/Figuren/Tyrion";
 import Cersei from "./pages/Figuren/Cersei";
 import Jaime from "./pages/Figuren/Jaime";
+import Stark from "./pages/Hauser/Stark";
+import Targaryen from "./pages/Hauser/Targaryen";
+import Houses from "./pages/Houses";
+import Lannister from "./pages/Hauser/Lannister";
+import Joffrey from "./pages/Figuren/Joffrey";
+import Tommen from "./pages/Figuren/Tommen";
+import Myrcella from "./pages/Figuren/Myrcella";
 
 
 function App() {
@@ -33,6 +40,7 @@ function App() {
                         <Route path="/winterfell" element={<Winterfell/>}/>
                         <Route path="/kingslanding" element={<Kingslanding/>}/>
                         <Route path="/orte" element={<Orte/>}/>
+                        <Route path="/houses" element={<Houses/>}/>
                         <Route path="/eddard" element={<Eddard/>}/>
                         <Route path="/casterlyrock" element={<CasterlyRock/>}/>
                         <Route path="/castleBlack" element={<CastleBlack/>}/>
@@ -46,6 +54,12 @@ function App() {
                         <Route path="/tyrion" element={<Tyrion/>}/>
                         <Route path="/cersei" element={<Cersei/>}/>
                         <Route path="/jaime" element={<Jaime/>}/>
+                        <Route path="/stark" element={<Stark/>}/>
+                        <Route path="/targaryen" element={<Targaryen/>}/>
+                        <Route path="/lannister" element={<Lannister/>}/>
+                        <Route path="/joffrey" element={<Joffrey/>}/>
+                        <Route path="/tommen" element={<Tommen/>}/>
+                        <Route path="/myrcella" element={<Myrcella/>}/>
                     </Routes>
                 </BrowserRouter>
             </div>

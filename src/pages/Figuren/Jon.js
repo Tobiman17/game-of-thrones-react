@@ -20,7 +20,7 @@ const Jon = () => {
                 <Content
                     quote={'"Love Is The Death Of Duty."'}
                     quotePerson={"-Jon Snow"}
-                    description={"Jon Snow, ist der Sohn von Rhaegar Targaryen und Lyanna Stark. Er wurde von Eddard Stark als Bastard großgezogen."}/>
+                    description={"Jon Snow, ist der Sohn von Rhaegar Targaryen und Lyanna Stark. Er wurde von Eddard Stark als sein Bastard großgezogen, um ihm vor Roberts Baratheon zu beschützen."}/>
             </div>
             <Smoke />
             <Sparks />

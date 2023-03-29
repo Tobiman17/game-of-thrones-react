@@ -3,9 +3,10 @@
 .swiper {
   width: 100%;
   height: 100%;
+  overflow: visible !important;
 }
 
-.listContainer{
+.listContainer {
   padding-top: 150px;
   padding-bottom: 50px;
   display: flex;
@@ -13,53 +14,71 @@
   align-items: center;
 }
 
-.customContainerList{
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 350px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6 !important;
+  max-height: 500px!important;
+  transition: all 1s ease-in-out;
+  height: 1000px!important;
+
+  .figurenName {
+    opacity: 0!important;
+  }
 }
 
-.figurenList{
+.swiper-slide-active {
+  opacity: 1 !important;
+  max-height: 500px!important;
+  transition: all 1s ease-in-out;
+  .figurenName {
+    opacity: 1!important;
+  }
+}
+
+.customContainerList {
+}
+
+.figurenList {
   padding-right: 150px;
   padding-left: 150px;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  height: 400px!important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .swiper-pagination-custom-progress {
   z-index: 2000000;
   position: relative;
   height: 8px;
 }
 
-.swiper-pagination-custom{
+.swiper-pagination-custom {
   background-color: $color-gray;
 }
 
-.starkList{
+.starkList {
   background-color: $color-stark;
   transition: width .3s ease-in-out;
 }
 
-.targaryenList{
+.targaryenList {
   background-color: $color-targaryen;
   transition: width .3s ease-in-out;
 }
 
-.lannisterList{
+.lannisterList {
   background-color: $color-lannister;
   transition: width .3s ease-in-out;
 }
 
-.houseLogo{
-  width: 100%;
+.houseLogo {
+  width: 25%;
 }
 
-.figureIMG{
+.figureIMG {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -67,31 +86,72 @@
 
 }
 
-.figurenContainer{
+.figurenContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-in-out;
   height: 100%;
   width: 100%;
-  &:hover{
-    .figurenName{
-      bottom: 50px;
-      transition: all 0.5s ease-in-out;
-      opacity: 1!important;
-    }
-  }
+
 }
 
-.figurenName{
+.figurenName {
   font-family: "Cera Round Pro", sans-serif;
   position: absolute;
   z-index: 100000;
   bottom: 0px;
-  opacity: 0;
-  color: $color-dark-white;
+  color: #d3d4de;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 25px;
+  font-size: 16px;
+  margin-bottom: -150px;
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+}
 
+.figureHeadline{
+  font-size: 35px;
+}
+
+.lastContainer{
+  padding-bottom: 300px;
+}
+
+.houseLink {
+  z-index: 10000;
+  position: relative;
+}
+
+.houseLogoHousePage {
+  width: 50%;
+}
+
+.housesContainer {
+  padding-top: 100px;
+}
+
+.figureBtn {
+  position: relative;
+  padding: 10px 20px;
+  width: fit-content;
+  background: linear-gradient($color-dark-green, $color-dark-green 50%, $color-black 50%, $color-black);
+  background-size: 100% 200%;
+  transition: background .5s;
+  color: $color-white !important;
+  text-decoration: none !important;
+
+
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-position: 100% 100%;
+    color: $color-white;
+
+  }
 }

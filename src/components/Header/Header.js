@@ -26,6 +26,13 @@ import tywinHeader from "../../img/headers/tywinHeader.jpeg";
 import tyrionHeader from "../../img/headers/tyrion.jpeg";
 import cerseiHeader from "../../img/headers/cerseiHeader.jpeg";
 import jaimeHeader from "../../img/headers/jaimeHeader.jpeg";
+import starkHeader from "../../img/headers/starkheader.jpeg";
+import targaryenHeader from "../../img/headers/targaryenHeader.jpeg";
+import lannisterHeader from "../../img/headers/lannisterHeader.jpeg";
+import figurenHeader from "../../img/headers/figurenHeader.jpeg";
+import myrcellaHeader from "../../img/headers/myrcellaHeader.jpg";
+import tommenHeader from "../../img/headers/tommenHeader.jpeg";
+import joffreyHeader from "../../img/headers/joffreyHeader.jpeg";
 
 
 
@@ -44,6 +51,13 @@ const headers = {
     tyrionHeader,
     cerseiHeader,
     jaimeHeader,
+    starkHeader,
+    targaryenHeader,
+    lannisterHeader,
+    figurenHeader,
+    myrcellaHeader,
+    tommenHeader,
+    joffreyHeader,
 };
 function Header(props) {
 
