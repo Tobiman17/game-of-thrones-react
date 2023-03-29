@@ -48,9 +48,6 @@ const BackBTN = () => {
                         <a href={"/figuren"} className="menuHeadline">
                             Figuren
                         </a>
-                        <a href={"/orte"} className="menuHeadline">
-                            Orte
-                        </a>
                         <a href={"/houses"} className="menuHeadline">
                             Häuser
                         </a>

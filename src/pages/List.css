@@ -143,4 +143,8 @@
   color: #FFF;
 }
 
+.housesSwiper .swiper-slide {
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=List.css.map */
