@@ -7,9 +7,10 @@ import {EffectCoverflow, Pagination} from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import Stark from "../img/stark/stark.png";
+import Stark from "../img/stark/starkWappen.webp";
 import Targayren from "../img/targaryen/targaryenLogo.png";
 import Lannister from "../img/lannister/lannisterLogo.svg";
+import Baratheon from "../img/baratheon/baratheon.png";
 
 import Eddard from "../img/stark/eddard.png";
 import Catlyn from "../img/stark/catlyn.png";
@@ -27,6 +28,7 @@ import Jaime from "../img/lannister/jaime.jpeg";
 import Joffrey from "../img/lannister/joffrey.webp";
 import Tommen from "../img/lannister/tommen.webp";
 import Myrcella from "../img/lannister/myrcella.webp";
+import Robert from "../img/baratheon/robert.webp";
 import Smoke from "../components/Smoke/Smoke";
 import Sparks from "../components/Sparks/Sparks";
 import LightCursor from "../components/LightingCursor/LightCursor";
@@ -59,13 +61,13 @@ const Figuren = () => {
         <>
             <BackBTN/>
             <Menu/>
-            <LightCursor/>
             <Sparks/>
             <Smoke/>
+            <LightCursor/>
             <Header header={"figurenHeader"} title={"Figuren"}/>
             <div className="d-flex justify-content-center align-items-center figurenList">
                 <div className="container customContainerList">
-                    <div className="row listContainer ">
+                    <div className="row listContainer">
                         <div className="col-lg-12 d-flex justify-content-center align-items-center">
                             <a className="houseLink d-flex justify-content-center align-items-center py-4"
                                href="/stark">
@@ -85,10 +87,8 @@ const Figuren = () => {
                                     slideShadows: true,
                                 }}
                                 centeredSlides={true}
-                                speed={1000}
                                 modules={[EffectCoverflow, Pagination]}
                                 className="mySwiper"
-                                onSlideChange={handleSlideChangeStark}
 
                             >
 
@@ -98,7 +98,7 @@ const Figuren = () => {
                                     </a>
                                     <div className="figurenName">
                                         <div className="py-3 figureHeadline">Eddard Stark</div>
-                                        <a href="eddard" className="figureBtn">
+                                        <a href="/eddard" className="figureBtn">
                                         <span>
                                             Mehr entdecken
                                         </span>
@@ -112,7 +112,7 @@ const Figuren = () => {
                                     </a>
                                     <div className="figurenName">
                                         <div className="py-3 figureHeadline">Catlyn Stark</div>
-                                        <a href="catlyn" className="figureBtn">
+                                        <a href="/catlyn" className="figureBtn">
                                         <span>
                                             Mehr entdecken
                                         </span>
@@ -125,7 +125,7 @@ const Figuren = () => {
                                     </a>
                                     <div className="figurenName">
                                         <div className="py-3 figureHeadline">Rob Stark</div>
-                                        <a href="rob" className="figureBtn">
+                                        <a href="/rob" className="figureBtn">
                                         <span>
                                             Mehr entdecken
                                         </span>
@@ -138,7 +138,7 @@ const Figuren = () => {
                                     </a>
                                     <div className="figurenName">
                                         <div className="py-3 figureHeadline">Jon Snow</div>
-                                        <a href="jon" className="figureBtn">
+                                        <a href="/jon" className="figureBtn">
                                         <span>
                                             Mehr entdecken
                                         </span>
@@ -146,16 +146,56 @@ const Figuren = () => {
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img className="figureIMG" src={Sansa} alt="Sansa"/>
+                                    <a className="figurenContainer" href="/sansa">
+                                        <img className="figureIMG" src={Sansa} alt="Sansa"/>
+                                    </a>
+                                    <div className="figurenName">
+                                        <div className="py-3 figureHeadline">Sansa Stark</div>
+                                        <a href="/sansa" className="figureBtn">
+                                        <span>
+                                            Mehr entdecken
+                                        </span>
+                                        </a>
+                                    </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img className="figureIMG" src={Arya} alt="Arya"/>
+                                    <a className="figurenContainer" href="/arya">
+                                        <img className="figureIMG" src={Arya} alt="Arya"/>
+                                    </a>
+                                    <div className="figurenName">
+                                        <div className="py-3 figureHeadline">Arya Stark</div>
+                                        <a href="/arya" className="figureBtn">
+                                        <span>
+                                            Mehr entdecken
+                                        </span>
+                                        </a>
+                                    </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img className="figureIMG" src={Bran} alt="Bran"/>
+                                    <a className="figurenContainer" href="/bran">
+                                        <img className="figureIMG" src={Bran} alt="Bran"/>
+                                    </a>
+                                    <div className="figurenName">
+                                        <div className="py-3 figureHeadline">Bran Stark</div>
+                                        <a href="/bran" className="figureBtn">
+                                        <span>
+                                            Mehr entdecken
+                                        </span>
+                                        </a>
+                                    </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img className="figureIMG" src={Rickon} alt="Rickon"/>
+                                    <a className="figurenContainer" href="/rickon">
+                                        <img className="figureIMG" src={Rickon} alt="Rickon"/>
+                                    </a>
+                                    <div className="figurenName">
+                                        <div className="py-3 figureHeadline">Rickon Stark</div>
+                                        <a href="/rickon" className="figureBtn">
+                                        <span>
+                                            Mehr entdecken
+                                        </span>
+                                        </a>
+                                    </div>
                                 </SwiperSlide>
                             </Swiper>
 
@@ -181,10 +221,8 @@ const Figuren = () => {
                                         slideShadows: true,
                                     }}
                                     centeredSlides={true}
-                                    speed={1000}
                                     modules={[EffectCoverflow, Pagination]}
                                     className="mySwiper"
-                                    onSlideChange={handleSlideChangeTargaryen}
                                 >
                                 <SwiperSlide>
                                     <a className="figurenContainer" href="/daenerys">
@@ -202,7 +240,7 @@ const Figuren = () => {
                             </Swiper>
                         </div>
                     </div>
-                    <div className="row listContainer lastContainer">
+                    <div className="row listContainer">
                         <div className="col-lg-12">
                             <a className="houseLink d-flex justify-content-center align-items-center py-4"
                                 href="/lannister">
@@ -222,10 +260,8 @@ const Figuren = () => {
                                         slideShadows: true,
                                     }}
                                     centeredSlides={true}
-                                    speed={1000}
                                     modules={[EffectCoverflow, Pagination]}
                                     className="mySwiper"
-                                    onSlideChange={handleSlideChangeLannister}
                                 >
                                 <SwiperSlide>
                                     <a className="figurenContainer" href="/tywin">
@@ -312,6 +348,45 @@ const Figuren = () => {
                                     <div className="figurenName">
                                         <div className="py-3 figureHeadline">Myrcella Baratheon</div>
                                         <a href="myrcella" className="figureBtn">
+                                        <span>
+                                            Mehr entdecken
+                                        </span>
+                                        </a>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+                    </div>
+                    <div className="row listContainer lastContainer ">
+                        <div className="col-lg-12">
+                            <a className="houseLink d-flex justify-content-center align-items-center py-4"
+                               href="/baratheon">
+                                <img className="houseLogo" src={Baratheon} alt="Baratheon"/>
+                            </a>
+                        </div>
+                        <div className="col-lg-12">
+                            <Swiper
+                                effect={"coverflow"}
+                                grabCursor={true}
+                                slidesPerView={"auto"}
+                                coverflowEffect={{
+                                    rotate: 25,
+                                    stretch: 0,
+                                    depth: 100,
+                                    modifier: 1,
+                                    slideShadows: true,
+                                }}
+                                centeredSlides={true}
+                                modules={[EffectCoverflow, Pagination]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide>
+                                    <a className="figurenContainer" href="/robert">
+                                        <img className="figureIMG" src={Robert} alt="Robert"/>
+                                    </a>
+                                    <div className="figurenName">
+                                        <div className="py-3 figureHeadline">Robert Baratheon</div>
+                                        <a href="/robert" className="figureBtn">
                                         <span>
                                             Mehr entdecken
                                         </span>

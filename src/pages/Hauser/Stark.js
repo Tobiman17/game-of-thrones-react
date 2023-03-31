@@ -20,7 +20,7 @@ const Stark = () => {
                 <Content
                     quote={'"Winter is Coming"'}
                     quotePerson={"-Worte des Hauses"}
-                    description={"Haus Stark ist das älteste noch existierende Haus von Westeros. Winterfell, die Mauer und Stormsend wurden von Brandon dem Erbauer erbaut. Die Wurzeln von Haus Stark rechen bis zu den ersten Menschen, daher glauben sie noch immer an die alten Götter."}/>
+                    description={"Haus Stark ist das älteste noch existierende Haus von Westeros. Winterfell, die Mauer und Stormsend wurden von Brandon dem Erbauer erbaut. Die Wurzeln von Haus Stark reichen bis zu den ersten Menschen, daher glauben sie noch immer an die alten Götter."}/>
             </div>
             <Smoke />
             <Sparks />

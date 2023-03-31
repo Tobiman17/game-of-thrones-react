@@ -2,9 +2,10 @@ import React, {useEffect} from "react";
 import BackBTN from "../components/BackBTN/BackBTN";
 import Menu from "../components/Menu/Menu";
 import LightCursor from "../components/LightingCursor/LightCursor";
-import Stark from "../img/stark/stark.png";
+import Stark from "../img/stark/starkWappen.webp";
 import Targayren from "../img/targaryen/targaryenLogo.png";
 import Lannister from "../img/lannister/lannisterLogo.svg";
+import Baratheon from "../img/baratheon/baratheon.png";
 import Smoke from "../components/Smoke/Smoke";
 import Sparks from "../components/Sparks/Sparks";
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -20,6 +21,7 @@ import Sansa from "../img/stark/sansa.png";
 import Arya from "../img/stark/arya.png";
 import Bran from "../img/stark/bran.png";
 import Rickon from "../img/stark/rickon.png";
+import Header from "../components/Header/Header";
 
 
 const Orte = () => {
@@ -29,8 +31,10 @@ const Orte = () => {
             <BackBTN/>
             <Menu/>
             <Smoke/>
+            <LightCursor/>
             <Sparks/>
-            <div className="container customContainerList housesContainer">
+            <Header header={"housesHeader"} title={"Houses"} />
+            <div className="container customContainerList housesContainer lastContainer">
                 <Swiper
                     effect={"coverflow"}
                     grabCursor={true}
@@ -81,6 +85,19 @@ const Orte = () => {
                         <div className="figurenName">
                             <div className="py-3 figureHeadline">House Targaryen</div>
                             <a href="targaryen" className="figureBtn">
+                                        <span>
+                                            Mehr entdecken
+                                        </span>
+                            </a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <a className="figurenContainer" href="/baratheon">
+                            <img className="houseLogoHousePage" src={Baratheon} alt="Baratheon"/>
+                        </a>
+                        <div className="figurenName">
+                            <div className="py-3 figureHeadline">House Baratheon</div>
+                            <a href="/baratheon" className="figureBtn">
                                         <span>
                                             Mehr entdecken
                                         </span>

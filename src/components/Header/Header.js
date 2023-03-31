@@ -11,28 +11,40 @@ import { TweenLite, Linear, Back, Power1, gsap } from 'gsap';
 import { CSSPlugin } from "gsap/CSSPlugin";
 
 import winterfellHeader from "../../img/headers/winterfellHeader.jpg";
-import kingslandingHeader from "../../img/headers/kingslandingHeader.webp";
+import kingslandingHeader from "../../img/headers/kingslading3.webp";
 import casterlyRockHeader from "../../img/headers/casterlyRockHeader.webp";
 import castleBlackHeader from "../../img/headers/castleBlackHeader.jpeg";
-import dragonStoneHeader from "../../img/headers/dragonStoneHeader.webp";
+import dragonStoneHeader from "../../img/headers/dragonstone3.jpg";
 
 
 import eddardHeader from "../../img/headers/eddardHeader.png";
 import catlynHeader from "../../img/headers/catlynHeader.jpeg";
 import robHeader from "../../img/headers/robHeader.webp";
-import jonHeader from "../../img/headers/jonHeader.webp";
+import jonHeader from "../../img/headers/jonHeader2.jpg";
 import danyHeader from "../../img/headers/danyHeader.jpeg";
-import tywinHeader from "../../img/headers/tywinHeader.jpeg";
-import tyrionHeader from "../../img/headers/tyrion.jpeg";
-import cerseiHeader from "../../img/headers/cerseiHeader.jpeg";
-import jaimeHeader from "../../img/headers/jaimeHeader.jpeg";
+import tywinHeader from "../../img/headers/tywinHeader3.jpg";
+import tyrionHeader from "../../img/headers/tyrionHeader2.jpg";
+import cerseiHeader from "../../img/headers/cerseiHeader3.jpg";
+import jaimeHeader from "../../img/headers/jaimeHeader3.jpg";
 import starkHeader from "../../img/headers/starkheader.jpeg";
-import targaryenHeader from "../../img/headers/targaryenHeader.jpeg";
+import targaryenHeader from "../../img/headers/targaryenHeader2.jpeg";
 import lannisterHeader from "../../img/headers/lannisterHeader.jpeg";
 import figurenHeader from "../../img/headers/figurenHeader.jpeg";
 import myrcellaHeader from "../../img/headers/myrcellaHeader.jpg";
 import tommenHeader from "../../img/headers/tommenHeader.jpeg";
 import joffreyHeader from "../../img/headers/joffreyHeader.jpeg";
+import sansaHeader from "../../img/headers/sansaHeader2.jpg";
+import aryaHeader from "../../img/headers/aryaHeader.jpg";
+import branHeader from "../../img/headers/branHeader.jpg";
+import rickonHeader from "../../img/headers/rickonHeader.jpg";
+import braavosHeader from "../../img/headers/braavosHeader.jpg";
+import meerenHeader from "../../img/headers/meerenHeader.webp";
+import housesHeader from "../../img/headers/housesHeader2.jpg";
+import baratheonHeader from "../../img/headers/baratheonheader.jpeg";
+import robertHeader from "../../img/headers/robertHeader2.jpg";
+import eyrieHeader from "../../img/headers/eyrieHeader.jpg";
+import harrenhalHeader from "../../img/headers/harrenhal2.webp";
+import pykeHeader from "../../img/headers/pykeHeader.jpg";
 
 
 
@@ -58,6 +70,18 @@ const headers = {
     myrcellaHeader,
     tommenHeader,
     joffreyHeader,
+    sansaHeader,
+    aryaHeader,
+    branHeader,
+    rickonHeader,
+    braavosHeader,
+    meerenHeader,
+    housesHeader,
+    baratheonHeader,
+    robertHeader,
+    eyrieHeader,
+    harrenhalHeader,
+    pykeHeader
 };
 function Header(props) {
 

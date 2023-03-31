@@ -14,7 +14,7 @@ const Winterfell = () => {
         const handleScroll = () => {
 
             const divs = document.getElementById("sparks");
-            const limit = 600;
+            const limit = 300;
             const st = window.pageYOffset || document.documentElement.scrollTop;
 
             if (st <= limit) {

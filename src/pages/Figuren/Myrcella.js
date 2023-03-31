@@ -19,7 +19,7 @@ const Myrcella = () => {
                 <Content
                     quote={'"We\'re children. We\'re supposed to be childish."'}
                     quotePerson={"-Myrcella Baratheon"}
-                    description={"Myrcella ist die Tochter von Jaime und Cersei Lannister."}/>
+                    description={"Myrcella ist die Tochter von Jaime und Cersei Lannister. Sie wurde in jungen Jahren nach Dorne geschickt um dort zu heiraten."}/>
             </div>
             <Smoke />
             <Sparks />

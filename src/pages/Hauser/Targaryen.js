@@ -20,7 +20,7 @@ const Targaryen = () => {
                 <Content
                     quote={'"Fire and Blood"'}
                     quotePerson={"-Worte des Hauses"}
-                    description={""}/>
+                    description={"Eine kleine, unbekannte Familie in Valyria, doch als Aegon der Eroberer mit Balerion dem schwarzen Schrecken nach Westeros kam änderte sich das. Valyria wurde zerstört, somit waren die Targaryens die einzigen Drachenreiter. Die Regentschaft der Targaryens hielt über 300 Jahre, bis zu Roberts Rebellion. "}/>
             </div>
             <Smoke />
             <Sparks />

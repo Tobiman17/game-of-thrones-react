@@ -19,7 +19,7 @@ const Cersei = () => {
                 <Content
                     quote={'"When You Play The Game Of Thrones, You Win Or You Die."'}
                     quotePerson={"-Cersei Lannister"}
-                    description={"Cersei Lannister ist die Tochter von Tywin Lannister. Sie und ihr Bruder Jaime Lannister bekommen 3 Kinder: Jofrei, Tommen und Myrcella."}/>
+                    description={"Cersei Lannister ist die Tochter von Tywin Lannister. Sie ist die Frau von Robert Baratheon und die Königin von Westeros. Sie und ihr Bruder Jaime Lannister bekommen 3 Kinder: Joffrey, Tommen und Myrcella."}/>
             </div>
             <Smoke />
             <Sparks />

@@ -20,7 +20,7 @@ const Eddard = () => {
                 <Content
                     quote={'"The man who passes the sentence should swing the sword."'}
                     quotePerson={"-Eddard Stark"}
-                    description={"Eddard Stark ist zu Beginn der ersten Staffel der Lord von Winterfell und Wächter des Nordens."}/>
+                    description={"Eddard Stark ist der Lord von Winterfell und Wächter des Nordens. Er ist der beste Freund von Robert Barathon, zusammen kämpften sie in der Rebellion gegen die Targaryens."}/>
             </div>
             <Smoke />
             <Sparks />

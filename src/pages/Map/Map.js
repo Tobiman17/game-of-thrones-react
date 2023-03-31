@@ -16,6 +16,11 @@ import KingslandingIMG from "../../img/popUp/Kingslanding.jpg";
 import CasterlyRockIMG from "../../img/popUp/CasterlyRock.jpeg";
 import CastleBlackIMG from "../../img/popUp/CastleBlack.webp";
 import DragonStoneIMG from "../../img/popUp/dragonStone.jpeg";
+import BraavosIMG from "../../img/popUp/Braavos.jpeg";
+import MeerenIMG from "../../img/popUp/meeren.webp";
+import EyrieIMG from "../../img/popUp/eyrie.webp";
+import HarrenhalIMG from "../../img/popUp/harrenhal.webp";
+import PykeIMG from "../../img/popUp/pyke.webp";
 
 const Map = () => {
     const [popup, setPopup] = useState(null);
@@ -57,6 +62,11 @@ const Map = () => {
         CasterlyRockIMG,
         CastleBlackIMG,
         DragonStoneIMG,
+        BraavosIMG,
+        MeerenIMG,
+        EyrieIMG,
+        HarrenhalIMG,
+        PykeIMG,
     };
 
     const handlePopup = (e) => {
@@ -404,6 +414,61 @@ const Map = () => {
                             alt="dragonStoneMap"
                             noHref=""
                             coords="1767,1928,32"
+                            shape="circle"
+                            onClick={handlePopup}
+                        />
+                        <area
+                            id="braavos"
+                            className="place"
+                            name="Braavos"
+                            data-popup="Freistaat, entsprungen aus Valyria."
+                            alt="braavosMap"
+                            noHref=""
+                            coords="2197,1399,49"
+                            shape="circle"
+                            onClick={handlePopup}
+                        />
+                        <area
+                            id="meeren"
+                            className="place"
+                            name="Meeren"
+                            data-popup="Eine Sklavestadt, die von Daenerys befreit wurde."
+                            alt="meerenMap"
+                            noHref=""
+                            coords="4119,2618,38"
+                            shape="circle"
+                            onClick={handlePopup}
+                        />
+                        <area
+                            id="eyrie"
+                            className="place"
+                            name="Eyrie"
+                            data-popup="Der Hauptsitz von Haus Arryn."
+                            alt="eyrieMap"
+                            noHref=""
+                            coords="1588,1579,36"
+                            shape="circle"
+                            onClick={handlePopup}
+                        />
+                        <area
+                            id="harrenhal"
+                            className="place"
+                            name="Harrenhal"
+                            data-popup="Sie wurde von Balerion dem schwarzen Schrecken zerstört."
+                            alt="harrenhalMap"
+                            noHref=""
+                            coords="1333,1814,35"
+                            shape="circle"
+                            onClick={handlePopup}
+                        />
+                        <area
+                            id="pyke"
+                            className="place"
+                            name="Pyke"
+                            data-popup="Die Hauptstadt der Greyjoys. Sie liegt auf den Eisen Inseln."
+                            alt="pykeMap"
+                            noHref=""
+                            coords="744,1624,32"
                             shape="circle"
                             onClick={handlePopup}
                         />

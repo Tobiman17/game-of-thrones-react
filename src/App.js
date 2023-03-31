@@ -27,6 +27,17 @@ import Lannister from "./pages/Hauser/Lannister";
 import Joffrey from "./pages/Figuren/Joffrey";
 import Tommen from "./pages/Figuren/Tommen";
 import Myrcella from "./pages/Figuren/Myrcella";
+import Sansa from "./pages/Figuren/Sansa";
+import Arya from "./pages/Figuren/Arya";
+import Bran from "./pages/Figuren/Bran";
+import Rickon from "./pages/Figuren/Rickon";
+import Braavos from "./pages/Locations/Braavos";
+import Meeren from "./pages/Locations/Meeren";
+import Baratheon from "./pages/Hauser/Baratheon";
+import Robert from "./pages/Figuren/Robert";
+import Eyrie from "./pages/Locations/Eyrie";
+import Harrenhall from "./pages/Locations/Harrenhall";
+import Pyke from "./pages/Locations/Pyke";
 
 
 function App() {
@@ -35,7 +46,7 @@ function App() {
             <div className={"allContent"}>
                 <BrowserRouter>
                     <Routes>
-                        <Route index element={<LandingPage/>}/>
+                        <Route index element={<Map/>}/>
                         <Route path="/map" element={<Map/>}/>
                         <Route path="/winterfell" element={<Winterfell/>}/>
                         <Route path="/kingslanding" element={<Kingslanding/>}/>
@@ -60,6 +71,17 @@ function App() {
                         <Route path="/joffrey" element={<Joffrey/>}/>
                         <Route path="/tommen" element={<Tommen/>}/>
                         <Route path="/myrcella" element={<Myrcella/>}/>
+                        <Route path="/arya" element={<Arya/>}/>
+                        <Route path="/sansa" element={<Sansa/>}/>
+                        <Route path="/bran" element={<Bran/>}/>
+                        <Route path="/rickon" element={<Rickon/>}/>
+                        <Route path="/braavos" element={<Braavos/>}/>
+                        <Route path="/meeren" element={<Meeren/>}/>
+                        <Route path="/baratheon" element={<Baratheon/>}/>
+                        <Route path="/robert" element={<Robert/>}/>
+                        <Route path="/eyrie" element={<Eyrie/>}/>
+                        <Route path="/harrenhal" element={<Harrenhall/>}/>
+                        <Route path="/pyke" element={<Pyke/>}/>
                     </Routes>
                 </BrowserRouter>
             </div>

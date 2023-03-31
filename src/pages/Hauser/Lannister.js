@@ -20,7 +20,7 @@ const Lannister = () => {
                 <Content
                     quote={'"Hear me Roar"'}
                     quotePerson={"-Worte des Hauses"}
-                    description={""}/>
+                    description={"Ein altes Haus im Westen von Westeros. Ihr Hauptsitz is Castery Rock, eine uneinnehmbare Burg, wie es heißt. Zur Zeit wo Game of Thrones spielt, ist es das reichste Haus und vielleicht mächtigste Haus der sieben Königslande."}/>
             </div>
             <Smoke />
             <Sparks />

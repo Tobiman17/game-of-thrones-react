@@ -19,7 +19,7 @@ const Tyrion = () => {
                 <Content
                     quote={'"Thats what i do. I drink and i know things"'}
                     quotePerson={"-Tyrion Lannister"}
-                    description={"Tyrion Lannister ist der Sohn von Tywin Lannister. Er gilt als der klügste Mann von Westeros."}/>
+                    description={"Tyrion Lannister ist der Sohn von Tywin Lannister. Er gilt als der klügste Mann von Westeros. Bei seiner Geburt starb seine Mutter, er ist ein Zwerg."}/>
             </div>
             <Smoke />
             <Sparks />

@@ -20,7 +20,7 @@ const Tommen = () => {
                     quote={'"I\'ve married the most beautiful woman in the world, and it\'s all because my brother died\n' +
                         '\n"'}
                     quotePerson={"-Tommen Baratheon"}
-                    description={"Tommen ist der jüngste Sohn von Jaime und Cersei. Er wurde nach Jofrei zum König gekrönt."}/>
+                    description={"Tommen ist der jüngste Sohn von Jaime und Cersei. Er wurde nach Jofrei zum König gekrönt. Margery wurde zu seiner Frau."}/>
             </div>
             <Smoke />
             <Sparks />
